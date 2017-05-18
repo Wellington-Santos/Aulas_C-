@@ -55,7 +55,12 @@ namespace JogoVelha
             if (
                 B11.Text != String.Empty && B11.Text == B12.Text && B12.Text == B13.Text || //Linha 1
                 B21.Text != String.Empty && B21.Text == B22.Text && B22.Text == B23.Text || //Linha 2
-                B31.Text != String.Empty && B31.Text == B32.Text && B32.Text == B33.Text || //Linha 3  
+                B31.Text != String.Empty && B31.Text == B32.Text && B32.Text == B33.Text || //Linha 3 
+                 
+                B11.Text != String.Empty && B11.Text == B21.Text && B21.Text == B31.Text || //Coluna 1 
+                B12.Text != String.Empty && B12.Text == B22.Text && B22.Text == B32.Text || //Coluna 2 
+                B11.Text != String.Empty && B13.Text == B23.Text && B23.Text == B33.Text || //Coluna 3 
+
 
                 B11.Text != String.Empty && B11.Text == B22.Text && B22.Text == B33.Text || //Linha \  
                 B13.Text != String.Empty && B13.Text == B22.Text && B22.Text == B31.Text  //Linha /
